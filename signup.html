@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signupform</title>
+    <style>
+        body {
+
+            padding: 10%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" class="signup">
+
+        <fieldset style="border-color:green">
+            <legend style="color:green">Register Here</legend>
+            <input type="text" class="name" placeholder="Enter your Name" required><br><br>
+            <input type="email" class="email" placeholder="Enter your Email" required><br><br>
+            <input type="text" class="username" placeholder="Enter your Username" required><br><br>
+            <input type="submit" class="register" value="Register">
+        </fieldset>
+
+    </form>
+    <script>
+        let name = document.querySelector(".name")
+        let username = document.querySelector(".username")
+        let btn = document.querySelector(".register")
+        let arr = []
+        btn.addEventListener("click", addetails);
+        function addetails(e) {
+            e.preventDefault();
+            let naam = name.value;
+            let user = username.value;
+
+            let obj = { Name: naam, Username: user }
+            arr.push(obj);
+
+            localStorage.setItem("data", JSON.stringify(arr))
+            window.location.href = "./index.html"
+        }
+
+
+    </script>
+</body>
+
+</html>

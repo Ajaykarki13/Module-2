@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="4 image Gallery with different functionality " />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Gallery with different functionality</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+
+            padding: 10%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <h2>Gallery : Click on the images below..</h2><br>
+    <h1 class="mesg" style="color:red;"></h1><br><br>
+    <div style="display:grid;grid-auto-flow: column;gap:0.5rem;">
+
+        <button class="img1"><img src="./img1.jpg" alt="img1" style="width:200px"></button>
+        <button class="img2"><img src="./img2.jpg" alt="img2" style="width:200px"></button>
+        <button class="img3"><img src="./img3.jpg" id="abc" alt="img3" style="width:200px;"></button>
+        <button class="img4"><img src="./img4.jpeg" alt="img4" style="width:200px"></button>
+
+    </div>
+    <br><br>
+
+    <p class="details" style="text-align: center;color:yellowgreen"></p><br>
+    <button class="dicegame" style="border:none">
+        <img src="./diceimg.gif" id="def" alt="img5" style="width:150px ;display:none;margin-left:50px">
+    </button>
+
+    </div><br><br>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
